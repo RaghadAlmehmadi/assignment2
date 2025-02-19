@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Grid & Flexbox Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+  width: 250px; 
+  height: 250px; 
+  object-fit: cover;
+}
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      gap: 10px;
+    }
+    .box {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      flex: 1;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Responsive Image Gallery (CSS Grid)</h1>
+  <div class="gallery">
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+    <img src="/Users/raghadalmehmadi/Desktop/assignment/imag2.webp" alt="Gallery Image" />
+  </div>
+
+
+  <h1>Responsive Flexbox Layout</h1>
+  <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+</body>
+</html>
